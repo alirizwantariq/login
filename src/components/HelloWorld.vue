@@ -1,58 +1,66 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <p>
-      For a guide and recipes on how to configure / customize this project,<br>
-      check out the
-      <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
-    </p>
-    <h3>Installed CLI Plugins</h3>
-    <ul>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank" rel="noopener">babel</a></li>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint" target="_blank" rel="noopener">eslint</a></li>
-    </ul>
-    <h3>Essential Links</h3>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank" rel="noopener">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank" rel="noopener">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank" rel="noopener">Twitter</a></li>
-      <li><a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a></li>
-    </ul>
-    <h3>Ecosystem</h3>
-    <ul>
-      <li><a href="https://router.vuejs.org" target="_blank" rel="noopener">vue-router</a></li>
-      <li><a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a></li>
-      <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank" rel="noopener">vue-devtools</a></li>
-      <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
-    </ul>
-  </div>
+  <main>
+    <section class="p-5 h-100">
+      <div class="container mt-5 ">
+        <div class="d-sm-flex justify-content-between">
+          <div class="heading my-auto">
+            <h1 class="text-sm-center text-md-start ">Welcome to<span class="text-warning">Profile Viewer</span></h1>
+            <p class="lead text-md-start">All your data in one place</p>
+            <!-- LogIn Form -->
+            <div class="mt-5">
+              <div class="pe-5">
+                <h1 class="mb-5 text-success">LogIn To Access the Site,</h1>
+                <div>
+                  <div class="input-group mb-3">
+                    <span class="input-group-text">Email</span>
+                    <input class="form-control" type="email" id="email" required />
+                  </div>
+                  <div class="input-group mb-3">
+                    <span class="input-group-text">Password</span>
+                    <input class="form-control" type="password" id="password" required />
+                  </div>
+                  <button class="btn btn-lg bg-success rounded border text-white mt-3" type="submit" id="log-in">
+                    Log in
+                  </button>
+                </div>
+                <div class="w-25 mx-auto">
+                  <hr>
+                </div>
+                <div class="mt-2 wh">
+                  <p><small class="mx-auto">or</small></p>
+                  <button class="btn btn-lg mx-auto rounded border bg-success text-white" center>Log In with Google</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img class="w-50 img-fluid d-none d-sm-block rounded-1 " src="../assets/undraw_join_re_w1lh.svg" alt="">
+        </div>
+      </div>
+    </section>
+  </main>
+
 </template>
 
 <script>
 export default {
   name: 'HelloWorld',
-  props: {
-    msg: String
-  }
+  data() {
+    return {
+    }
+
+  },
+
+  methods: {
+
+  },
 }
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h3 {
-  margin: 40px 0 0;
+.gcolor{
+  margin: 0 auto;
 }
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
+.wh{
+  width:fit-content;
+  margin: 0 auto;
 }
 </style>
